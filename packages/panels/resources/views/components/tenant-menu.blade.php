@@ -63,12 +63,12 @@
                 class="grid justify-items-start text-start"
             >
                 @if ($currentTenant instanceof \Filament\Models\Contracts\HasCurrentTenantLabel)
-                    <span class="text-xs text-gray-500 dark:text-gray-400">
+                    <span class="text-xs leading-none text-gray-500 dark:text-gray-400">
                         {{ $currentTenant->getCurrentTenantLabel() }}
                     </span>
                 @endif
 
-                <span class="text-gray-950 dark:text-white">
+                <span class="text-gray-600 dark:text-white">
                     {{ $currentTenantName }}
                 </span>
             </span>

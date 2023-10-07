@@ -92,7 +92,7 @@
 
     <nav
         class="fi-sidebar-nav flex flex-col gap-y-7 overflow-y-auto overflow-x-hidden px-6 py-8"
-        style="scrollbar-gutter: stable"
+{{--        style="scrollbar-gutter: stable"--}}
     >
         {{ \Filament\Support\Facades\FilamentView::renderHook('panels::sidebar.nav.start') }}
 
@@ -110,7 +110,7 @@
         @endif
 
         @if (filament()->hasNavigation())
-            <ul class="-mx-2 flex flex-col gap-y-7">
+            <ul class="-mx-2 py-2 flex flex-col space-y-2 divide-y">
                 @foreach ($navigation as $group)
                     <x-filament-panels::sidebar.group
                         :collapsible="$group->isCollapsible()"

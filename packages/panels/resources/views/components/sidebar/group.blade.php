@@ -22,8 +22,8 @@
                 x-transition:enter-end="opacity-100"
             @endif
             @class([
-                'flex items-center gap-x-3 px-2 py-2',
-                'cursor-pointer' => $collapsible,
+                'flex items-center gap-x-3 px-4 py-2',
+                'cursor-pointer mt-2' => $collapsible,
             ])
         >
             @if ($icon)
