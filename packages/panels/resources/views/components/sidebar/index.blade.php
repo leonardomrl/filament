@@ -110,7 +110,7 @@
         @endif
 
         @if (filament()->hasNavigation())
-            <ul class="-mx-2 py-2 flex flex-col space-y-2 divide-y">
+            <ul class="-mx-2 flex flex-col space-y-2 divide-y">
                 @foreach ($navigation as $group)
                     <x-filament-panels::sidebar.group
                         :collapsible="$group->isCollapsible()"
